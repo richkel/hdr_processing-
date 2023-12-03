@@ -1,11 +1,49 @@
-# hdr_processing-
-hdr processing for invoke ai
-the smaller __init__ goes in the subdirectory with the HDR processing file.
-the large __init__ goes in the node main file of your invokeai directory.  
+# Installation Instructions
 
-example: "C:\Users\userid\invokeai\nodes\hdr"  
-hdr processing.py and smaller file size __init__.py
+## Prerequisites
 
+Ensure you have Python installed on your system. You can download it from [python.org](https://www.python.org/).
 
-"C:\Users\userid\invokeai\nodes" 
-large __init__.py file
+## Setting Up a Virtual Environment
+
+1. Open your command line interface (CLI).
+2. Navigate to the project directory:
+   ``` 
+   cd path/to/your/project
+Create a virtual environment:
+ 
+Copy code
+
+python -m venv .venv
+
+Activate the virtual environment:
+On Windows:
+Copy code
+
+.\.venv\Scripts\activate
+
+On macOS/Linux:
+Copy code
+
+source .venv/bin/activate
+
+Installing Dependencies
+With the virtual environment activated, install the project dependencies:
+Copy code
+
+pip install -r requirements.txt
+
+-------------------------------------------------------------------YOUR ENVIRONMENT IS NOW SET UP WITH ALL THE NECESSARY DEPENDENCIES.-------------------------------------------------------------------
+
+HDRProcessingInvocation (hdr_processing.py):
+
+This file defines a class for HDR image processing. It takes multiple images with different exposure times as input and merges them into a single HDR image using OpenCV functions.
+
+RetrieveImagesFromFileInvocation:
+
+This script is designed to retrieve images from a specified file or directory. It can optionally save these images into a ZIP file.
+
+ExposureTimesNode:
+
+This node handles exposure times for HDR images. It can use either simulated exposure times or user-provided values.
+For the full code of these files, you would typically find them in your project's repository or development environment. If you need to view or modify the code, you should refer to the files directly in your project.
