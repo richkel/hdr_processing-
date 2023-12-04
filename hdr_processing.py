@@ -13,23 +13,29 @@ class HDRProcessingInvocation(BaseInvocation):
     exposure_times: list[float] = InputField(description="Exposure times for each input image")
 
     def create_hdr_image(self, images, exposure_times):
-        images_cv = [cv2.cvtColor(np.array(image), cv2.COLOR_RGB2BGR) for image in images]
-        alignMTB = cv2.createAlignMTB()
-        alignMTB.process(images_cv, images_cv)
-        merge_debevec = cv2.createMergeDebevec()
-        hdr_image = merge_debevec.process(images_cv, times=np.array(exposure_times))
-        tonemap = cv2.createTonemap(2.2)
-        ldr_image = tonemap.process(hdr_image)
-        ldr_image = np.clip(ldr_image * 255, 0, 255).astype(np.uint8)
-        return Image.fromarray(cv2.cvtColor(ldr_image, cv2.COLOR_BGR2RGB))
+        logger.info("Starting HDR image creation")
+        try:
+            images_cv = [cv2.cvtColor(np.array(image), cv2.COLOR_RGB2BGR) for image in images]
+            alignMTB = cv2.createAlignMTB()
+            alignMTB.process(images_cv, images_cv)
+            merge_debevec = cv2.createMergeDebevec()
+            hdr_image = merge_debevec.process(images_cv, times=np.array(exposure_times))
+            tonemap = cv2.createTonemap(2.2)
+            ldr_image = tonemap.process(hdr_image)
+            ldr_image = np.clip(ldr_image * 255, 0, 255).astype(np.uint8)
+            return Image.fromarray(cv2.cvtColor(ldr_image, cv2.COLOR_BGR2RGB))
+        except Exception as e:
+            logger.error(f"Error in HDR image creation: {e}")
+            return None
 
     def invoke(self, context: InvocationContext) -> ImageOutput:
+        logger.info("HDR Processing node invoked")
         try:
             input_pil_images = []
             valid_exposures = []
 
             for image_field, exposure_time in zip(self.input_images, self.exposure_times):
-                # Replace get_pil_image with the actual method to retrieve the image
+                logger.info(f"Processing image: {image_field.image_name}")
                 pil_image = context.services.images.get_pil_image(image_field.image_name)
                 if pil_image is not None:
                     input_pil_images.append(pil_image)
@@ -38,25 +44,29 @@ class HDRProcessingInvocation(BaseInvocation):
                     logger.error(f"Image not found or invalid: {image_field.image_name}")
 
             if not input_pil_images:
-                logger.error("No valid input images found.")
-                return ImageOutput()
+                logger.error("No valid input images found. Exiting HDR Processing node.")
+                return ImageOutput(image=ImageField(image_name=""), width=0, height=0)
 
             hdr_result = self.create_hdr_image(input_pil_images, valid_exposures)
+            if hdr_result is None:
+                logger.error("HDR result is None. Exiting HDR Processing node.")
+                return ImageOutput(image=ImageField(image_name=""), width=0, height=0)
 
             output_image = context.services.images.create(
                 image=hdr_result,
-                image_origin=ResourceOrigin.INTERNAL,
-                image_category=ImageCategory.GENERAL,
+                image_origin="INTERNAL",
+                image_category="GENERAL",
                 node_id=self.id,
                 session_id=context.graph_execution_state_id,
                 is_intermediate=self.is_intermediate,
             )
 
+            logger.info(f"HDR Processing completed successfully. Output image: {output_image.image_name}")
             return ImageOutput(
                 image=ImageField(image_name=output_image.image_name),
                 width=output_image.width,
                 height=output_image.height
             )
         except Exception as e:
-            logger.error(f"Unexpected error: {e}")
-            raise e
+            logger.error(f"Unexpected error in HDR processing node: {e}")
+            return ImageOutput(image=ImageField(image_name=""), width=0, height=0)
