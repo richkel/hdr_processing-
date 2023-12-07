@@ -9,7 +9,23 @@
         "documentation": {}
     },
     {
+        "label": "Enum",
+        "importPath": "enum",
+        "description": "enum",
+        "isExtraImport": true,
+        "detail": "enum",
+        "documentation": {}
+    },
+    {
         "label": "BaseInvocation",
+        "importPath": "invokeai.app.invocations.baseinvocation",
+        "description": "invokeai.app.invocations.baseinvocation",
+        "isExtraImport": true,
+        "detail": "invokeai.app.invocations.baseinvocation",
+        "documentation": {}
+    },
+    {
+        "label": "BaseInvocationOutput",
         "importPath": "invokeai.app.invocations.baseinvocation",
         "description": "invokeai.app.invocations.baseinvocation",
         "isExtraImport": true,
@@ -49,6 +65,14 @@
         "documentation": {}
     },
     {
+        "label": "invocation_output",
+        "importPath": "invokeai.app.invocations.baseinvocation",
+        "description": "invokeai.app.invocations.baseinvocation",
+        "isExtraImport": true,
+        "detail": "invokeai.app.invocations.baseinvocation",
+        "documentation": {}
+    },
+    {
         "label": "BaseInvocation",
         "importPath": "invokeai.app.invocations.baseinvocation",
         "description": "invokeai.app.invocations.baseinvocation",
@@ -58,14 +82,6 @@
     },
     {
         "label": "InputField",
-        "importPath": "invokeai.app.invocations.baseinvocation",
-        "description": "invokeai.app.invocations.baseinvocation",
-        "isExtraImport": true,
-        "detail": "invokeai.app.invocations.baseinvocation",
-        "documentation": {}
-    },
-    {
-        "label": "OutputField",
         "importPath": "invokeai.app.invocations.baseinvocation",
         "description": "invokeai.app.invocations.baseinvocation",
         "isExtraImport": true,
@@ -98,14 +114,6 @@
     },
     {
         "label": "InputField",
-        "importPath": "invokeai.app.invocations.baseinvocation",
-        "description": "invokeai.app.invocations.baseinvocation",
-        "isExtraImport": true,
-        "detail": "invokeai.app.invocations.baseinvocation",
-        "documentation": {}
-    },
-    {
-        "label": "OutputField",
         "importPath": "invokeai.app.invocations.baseinvocation",
         "description": "invokeai.app.invocations.baseinvocation",
         "isExtraImport": true,
@@ -206,6 +214,22 @@
         "description": "invokeai.app.invocations.primitives",
         "isExtraImport": true,
         "detail": "invokeai.app.invocations.primitives",
+        "documentation": {}
+    },
+    {
+        "label": "validator",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
         "documentation": {}
     },
     {
@@ -287,11 +311,37 @@
         "documentation": {}
     },
     {
+        "label": "ResourceOrigin",
+        "importPath": "invokeai.app.invocations.image",
+        "description": "invokeai.app.invocations.image",
+        "isExtraImport": true,
+        "detail": "invokeai.app.invocations.image",
+        "documentation": {}
+    },
+    {
+        "label": "SimulatedExposureTimes",
+        "kind": 6,
+        "importPath": "exposuretimesnode",
+        "description": "exposuretimesnode",
+        "peekOfCode": "class SimulatedExposureTimes(Enum):\n    LONG_EXPOSURE = (30, \"Specialty night and low-light photos on a tripod\")\n    SILKY_WATER = (0.5, \"Silky look to flowing water, landscape photos on tripod\")\n    MOTION_BLUR = (1/15, \"Motion blur in background, hand-held photos with stabilization\")\n    HAND_HELD = (1/60, \"Typical hand-held photos without substantial zoom\")\n    ACTION_FREEZE = (1/250, \"Freeze everyday sports/action subject movement, telephoto lens\")\n    FAST_ACTION = (1/2000, \"Freeze extremely fast, up-close subject motion\")\n@invocation_output('exposure_times_output')\nclass ExposureTimesOutput(BaseInvocationOutput):\n    exposure_times: list[float] = OutputField(description=\"Exposure times for HDR image processing.\")",
+        "detail": "exposuretimesnode",
+        "documentation": {}
+    },
+    {
+        "label": "ExposureTimesOutput",
+        "kind": 6,
+        "importPath": "exposuretimesnode",
+        "description": "exposuretimesnode",
+        "peekOfCode": "class ExposureTimesOutput(BaseInvocationOutput):\n    exposure_times: list[float] = OutputField(description=\"Exposure times for HDR image processing.\")\n    @validator('exposure_times', each_item=True)\n    def check_positive(cls, v):\n        if v <= 0:\n            raise ValueError(\"Exposure times must be positive numbers.\")\n        return v\n@invocation(\"exposure_times\", title=\"Exposure Times for HDR\", tags=[\"hdr\", \"exposure\"], category=\"image\", version=\"0.1.0\", use_cache=False)\nclass ExposureTimesInvocation(BaseInvocation):\n    use_simulated_exposures: bool = InputField(description=\"Use simulated exposure times for HDR images.\", default=False)",
+        "detail": "exposuretimesnode",
+        "documentation": {}
+    },
+    {
         "label": "ExposureTimesInvocation",
         "kind": 6,
         "importPath": "exposuretimesnode",
         "description": "exposuretimesnode",
-        "peekOfCode": "class ExposureTimesInvocation(BaseInvocation):\n    image_metadata: list[dict] = InputField(description=\"Metadata for each image\", default=[])\n    default_exposure_time: float = InputField(description=\"Default exposure time if not found in metadata\", default=1/60)\n    input_images: list[ImageField] = InputField(description=\"Input images for HDR processing\")\n    exposure_times: list[float] = OutputField(description=\"Calculated exposure times for HDR image processing.\")\n    result_message: str = OutputField(description=\"Result message\")\n    def calculate_exposure_time(self, metadata):\n        exposure_time = metadata.get('EXIF ExposureTime')\n        if exposure_time:\n            return float(exposure_time)",
+        "peekOfCode": "class ExposureTimesInvocation(BaseInvocation):\n    use_simulated_exposures: bool = InputField(description=\"Use simulated exposure times for HDR images.\", default=False)\n    user_exposure_times: list[float] = InputField(description=\"Custom exposure times provided by the user.\", default=[])\n    image_metadata: list[dict] = InputField(description=\"Metadata for each image\", default=[])\n    default_exposure_time: float = InputField(description=\"Default exposure time if not found in metadata\", default=1/60)\n    def calculate_exposure_time(self, metadata):\n        # List of possible keys for exposure time in metadata\n        possible_keys = ['EXIF ExposureTime', 'ExposureTime', 'Exposure Time']\n        for key in possible_keys:\n            exposure_time = metadata.get(key)",
         "detail": "exposuretimesnode",
         "documentation": {}
     },
@@ -300,7 +350,7 @@
         "kind": 5,
         "importPath": "exposuretimesnode",
         "description": "exposuretimesnode",
-        "peekOfCode": "logger = logging.getLogger(__name__)\n@invocation(\"Exposure_Times\", title=\"Exposure Times for HDR\", tags=[\"hdr\", \"exposure\"], category=\"image\", version=\"1.0.0\", use_cache=False)\nclass ExposureTimesInvocation(BaseInvocation):\n    image_metadata: list[dict] = InputField(description=\"Metadata for each image\", default=[])\n    default_exposure_time: float = InputField(description=\"Default exposure time if not found in metadata\", default=1/60)\n    input_images: list[ImageField] = InputField(description=\"Input images for HDR processing\")\n    exposure_times: list[float] = OutputField(description=\"Calculated exposure times for HDR image processing.\")\n    result_message: str = OutputField(description=\"Result message\")\n    def calculate_exposure_time(self, metadata):\n        exposure_time = metadata.get('EXIF ExposureTime')",
+        "peekOfCode": "logger = logging.getLogger(__name__)\n# Updated Enum for simulated exposure times with descriptions\nclass SimulatedExposureTimes(Enum):\n    LONG_EXPOSURE = (30, \"Specialty night and low-light photos on a tripod\")\n    SILKY_WATER = (0.5, \"Silky look to flowing water, landscape photos on tripod\")\n    MOTION_BLUR = (1/15, \"Motion blur in background, hand-held photos with stabilization\")\n    HAND_HELD = (1/60, \"Typical hand-held photos without substantial zoom\")\n    ACTION_FREEZE = (1/250, \"Freeze everyday sports/action subject movement, telephoto lens\")\n    FAST_ACTION = (1/2000, \"Freeze extremely fast, up-close subject motion\")\n@invocation_output('exposure_times_output')",
         "detail": "exposuretimesnode",
         "documentation": {}
     },
@@ -309,7 +359,70 @@
         "kind": 6,
         "importPath": "hdr_processing",
         "description": "hdr_processing",
-        "peekOfCode": "class UnifiedHDRProcessingInvocation(BaseInvocation):\n    # ... [Class Fields]\n    def create_pseudo_exposure_stack(self, base_image, factors):\n        # ... [Function Body]\n     def invoke(self, context: InvocationContext) -> ImageCollectionOutput:\n        logger.info(\"Unified HDR Processing node invoked\")\n        try:\n            output_images = []\n            if len(self.input_images) > 1 and self.exposure_times:\n                # True HDR Processing with multiple images",
+        "peekOfCode": "class UnifiedHDRProcessingInvocation(BaseInvocation):\n    input_images: list[ImageField] = InputField(description=\"Input images for HDR processing\")\n    exposure_times: list[float] = InputField(description=\"Exposure times for each input image\")\n    pseudo_exposure_factors: list[float] = InputField(description=\"Pseudo exposure factors for single image HDR\", default=[])\n    def adjust_brightness(self, image, factor):\n        enhancer = ImageEnhance.Brightness(image)\n        return enhancer.enhance(factor)\n    def create_pseudo_hdr_image(self, base_image, factors):\n        pseudo_hdr_stack = [self.adjust_brightness(base_image, factor) for factor in factors]\n        pseudo_hdr_stack_cv = [cv2.cvtColor(np.array(image), cv2.COLOR_RGB2BGR) for image in pseudo_hdr_stack]",
+        "detail": "hdr_processing",
+        "documentation": {}
+    },
+    {
+        "label": "linearWeight",
+        "kind": 2,
+        "importPath": "hdr_processing",
+        "description": "hdr_processing",
+        "peekOfCode": "def linearWeight(pixel_value):\n    z_min, z_max = 0., 255.\n    if pixel_value <= (z_min + z_max) / 2:\n        return pixel_value - z_min\n    return z_max - pixel_value\ndef sampleIntensities(images):\n    z_min, z_max = 0, 255\n    num_intensities = z_max - z_min + 1\n    num_images = len(images)\n    intensity_values = np.zeros((num_intensities, num_images), dtype=np.uint8)",
+        "detail": "hdr_processing",
+        "documentation": {}
+    },
+    {
+        "label": "sampleIntensities",
+        "kind": 2,
+        "importPath": "hdr_processing",
+        "description": "hdr_processing",
+        "peekOfCode": "def sampleIntensities(images):\n    z_min, z_max = 0, 255\n    num_intensities = z_max - z_min + 1\n    num_images = len(images)\n    intensity_values = np.zeros((num_intensities, num_images), dtype=np.uint8)\n    mid_img = images[num_images // 2]\n    for i in range(z_min, z_max + 1):\n        rows, cols = np.where(mid_img == i)\n        if len(rows) != 0:\n            idx = random.randrange(len(rows))",
+        "detail": "hdr_processing",
+        "documentation": {}
+    },
+    {
+        "label": "computeResponseCurve",
+        "kind": 2,
+        "importPath": "hdr_processing",
+        "description": "hdr_processing",
+        "peekOfCode": "def computeResponseCurve(intensity_samples, log_exposures, smoothing_lambda, weighting_function):\n    z_min, z_max = 0, 255\n    intensity_range = 255\n    num_samples = intensity_samples.shape[0]\n    num_images = len(log_exposures)\n    mat_A = np.zeros((num_images * num_samples + intensity_range, num_samples + intensity_range + 1), dtype=np.float64)\n    mat_b = np.zeros((mat_A.shape[0], 1), dtype=np.float64)\n    k = 0\n    for i in range(num_samples):\n        for j in range(num_images):",
+        "detail": "hdr_processing",
+        "documentation": {}
+    },
+    {
+        "label": "computeRadianceMap",
+        "kind": 2,
+        "importPath": "hdr_processing",
+        "description": "hdr_processing",
+        "peekOfCode": "def computeRadianceMap(images, log_exposure_times, response_curve, weighting_function):\n    img_shape = images[0].shape\n    img_rad_map = np.zeros(img_shape, dtype=np.float64)\n    num_images = len(images)\n    for i in range(img_shape[0]):\n        for j in range(img_shape[1]):\n            g = np.array([response_curve[images[k][i, j]] for k in range(num_images)])\n            w = np.array([weighting_function(images[k][i, j]) for k in range(num_images)])\n            SumW = np.sum(w)\n            if SumW > 0:",
+        "detail": "hdr_processing",
+        "documentation": {}
+    },
+    {
+        "label": "globalToneMapping",
+        "kind": 2,
+        "importPath": "hdr_processing",
+        "description": "hdr_processing",
+        "peekOfCode": "def globalToneMapping(image, gamma):\n    image_corrected = cv2.pow(image/255., 1.0/gamma)\n    return image_corrected\ndef intensityAdjustment(image, template):\n    m, n, channel = image.shape\n    output = np.zeros((m, n, channel))\n    for ch in range(channel):\n        image_avg, template_avg = np.average(image[:, :, ch]), np.average(template[:, :, ch])\n        output[..., ch] = image[..., ch] * (template_avg / image_avg)\n    return output",
+        "detail": "hdr_processing",
+        "documentation": {}
+    },
+    {
+        "label": "intensityAdjustment",
+        "kind": 2,
+        "importPath": "hdr_processing",
+        "description": "hdr_processing",
+        "peekOfCode": "def intensityAdjustment(image, template):\n    m, n, channel = image.shape\n    output = np.zeros((m, n, channel))\n    for ch in range(channel):\n        image_avg, template_avg = np.average(image[:, :, ch]), np.average(template[:, :, ch])\n        output[..., ch] = image[..., ch] * (template_avg / image_avg)\n    return output\ndef computeHDR(images, log_exposure_times, smoothing_lambda=100., gamma=0.6):\n    num_channels = images[0].shape[2]\n    hdr_image = np.zeros(images[0].shape, dtype=np.float64)",
+        "detail": "hdr_processing",
+        "documentation": {}
+    },
+    {
+        "label": "computeHDR",
+        "kind": 2,
+        "importPath": "hdr_processing",
+        "description": "hdr_processing",
+        "peekOfCode": "def computeHDR(images, log_exposure_times, smoothing_lambda=100., gamma=0.6):\n    num_channels = images[0].shape[2]\n    hdr_image = np.zeros(images[0].shape, dtype=np.float64)\n    for channel in range(num_channels):\n        layer_stack = [img[:, :, channel] for img in images]\n        intensity_samples = sampleIntensities(layer_stack)\n        response_curve = computeResponseCurve(intensity_samples, log_exposure_times, smoothing_lambda, linearWeight)\n        img_rad_map = computeRadianceMap(layer_stack, log_exposure_times, response_curve, linearWeight)\n        hdr_image[..., channel] = cv2.normalize(img_rad_map, alpha=0, beta=255, norm_type=cv2.NORM_MINMAX)\n    image_mapped = globalToneMapping(hdr_image, gamma)",
         "detail": "hdr_processing",
         "documentation": {}
     },
@@ -318,8 +431,17 @@
         "kind": 5,
         "importPath": "hdr_processing",
         "description": "hdr_processing",
-        "peekOfCode": "logger = logging.getLogger(__name__)\n@invocation(\"Unified_HDR_Processing\", title=\"Unified HDR Processing\", tags=[\"image\", \"hdr\", \"ai\"], category=\"image\", version=\"1.0.0\", use_cache=False)\nclass UnifiedHDRProcessingInvocation(BaseInvocation):\n    # ... [Class Fields]\n    def create_pseudo_exposure_stack(self, base_image, factors):\n        # ... [Function Body]\n     def invoke(self, context: InvocationContext) -> ImageCollectionOutput:\n        logger.info(\"Unified HDR Processing node invoked\")\n        try:\n            output_images = []",
+        "peekOfCode": "logger = logging.getLogger(__name__)\n# HDR Processing Functions\ndef linearWeight(pixel_value):\n    z_min, z_max = 0., 255.\n    if pixel_value <= (z_min + z_max) / 2:\n        return pixel_value - z_min\n    return z_max - pixel_value\ndef sampleIntensities(images):\n    z_min, z_max = 0, 255\n    num_intensities = z_max - z_min + 1",
         "detail": "hdr_processing",
+        "documentation": {}
+    },
+    {
+        "label": "ImageZipResult",
+        "kind": 6,
+        "importPath": "retrieveimagesfromfile",
+        "description": "retrieveimagesfromfile",
+        "peekOfCode": "class ImageZipResult(BaseModel):\n    message: str\n@invocation(\n    \"Retrieve_Images_From_File\",\n    title=\"Retrieve Images from File or Directory\",\n    tags=[\"image\", \"file\"],\n    category=\"image\",\n    version=\"0.1.0\",\n    use_cache=False\n)",
+        "detail": "retrieveimagesfromfile",
         "documentation": {}
     },
     {
@@ -327,7 +449,7 @@
         "kind": 6,
         "importPath": "retrieveimagesfromfile",
         "description": "retrieveimagesfromfile",
-        "peekOfCode": "class RetrieveImagesFromFileInvocation(BaseInvocation):\n    input_path: str = InputField(description=\"Path to the file or directory containing images\")\n    save_to_zip: bool = InputField(description=\"Save all retrieved images to a ZIP file.\", default=False)\n    zip_save_path: str = InputField(description=\"Custom path to save the ZIP file.\", default=\"\")\n    def invoke(self, context: InvocationContext) -> ImageCollectionOutput:\n        logger.info(f\"Invoked RetrieveImagesFromFile with path: {self.input_path}\")\n        selected_images = self.get_images_from_path(self.input_path)\n        processed_images = []\n        metadata_collection = []\n        for image_path in selected_images:",
+        "peekOfCode": "class RetrieveImagesFromFileInvocation(BaseInvocation):\n    input_path: str = InputField(description=\"Path to the file or directory containing images\")\n    save_to_zip: bool = InputField(description=\"Save all retrieved images to a ZIP file.\", default=False)\n    zip_save_path: str = InputField(description=\"Custom path to save the ZIP file.\", default=\"\")\n    def invoke(self, context: InvocationContext) -> ImageCollectionOutput:\n        try:\n            selected_images = self.get_images_from_path(self.input_path)\n            processed_images = []\n            metadata_collection = []\n            for image_path in selected_images:",
         "detail": "retrieveimagesfromfile",
         "documentation": {}
     },
@@ -336,7 +458,7 @@
         "kind": 2,
         "importPath": "retrieveimagesfromfile",
         "description": "retrieveimagesfromfile",
-        "peekOfCode": "def extract_metadata(image_path):\n    \"\"\"\n    Extracts metadata from an image file using exifread.\n    \"\"\"\n    try:\n        with open(image_path, 'rb') as img_file:\n            tags = exifread.process_file(img_file)\n            return {tag: str(tags[tag]) for tag in tags if tag not in ['JPEGThumbnail', 'TIFFThumbnail', 'Filename', 'EXIF MakerNote']}\n    except Exception as e:\n        logger.error(f\"Error extracting metadata from {image_path}: {e}\")",
+        "peekOfCode": "def extract_metadata(image_path):\n    try:\n        with open(image_path, 'rb') as img_file:\n            tags = exifread.process_file(img_file)\n            return {tag: str(tags[tag]) for tag in tags if tag not in ['JPEGThumbnail', 'TIFFThumbnail', 'Filename', 'EXIF MakerNote']}\n    except Exception as e:\n        logger.error(f\"Error extracting metadata from {image_path}: {e}\")\n        return {}\nclass ImageZipResult(BaseModel):\n    message: str",
         "detail": "retrieveimagesfromfile",
         "documentation": {}
     },
@@ -345,7 +467,16 @@
         "kind": 5,
         "importPath": "retrieveimagesfromfile",
         "description": "retrieveimagesfromfile",
-        "peekOfCode": "logger = logging.getLogger(__name__)\ndef extract_metadata(image_path):\n    \"\"\"\n    Extracts metadata from an image file using exifread.\n    \"\"\"\n    try:\n        with open(image_path, 'rb') as img_file:\n            tags = exifread.process_file(img_file)\n            return {tag: str(tags[tag]) for tag in tags if tag not in ['JPEGThumbnail', 'TIFFThumbnail', 'Filename', 'EXIF MakerNote']}\n    except Exception as e:",
+        "peekOfCode": "logger = logging.getLogger(__name__)\nSCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))\ndef extract_metadata(image_path):\n    try:\n        with open(image_path, 'rb') as img_file:\n            tags = exifread.process_file(img_file)\n            return {tag: str(tags[tag]) for tag in tags if tag not in ['JPEGThumbnail', 'TIFFThumbnail', 'Filename', 'EXIF MakerNote']}\n    except Exception as e:\n        logger.error(f\"Error extracting metadata from {image_path}: {e}\")\n        return {}",
+        "detail": "retrieveimagesfromfile",
+        "documentation": {}
+    },
+    {
+        "label": "SCRIPT_DIR",
+        "kind": 5,
+        "importPath": "retrieveimagesfromfile",
+        "description": "retrieveimagesfromfile",
+        "peekOfCode": "SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))\ndef extract_metadata(image_path):\n    try:\n        with open(image_path, 'rb') as img_file:\n            tags = exifread.process_file(img_file)\n            return {tag: str(tags[tag]) for tag in tags if tag not in ['JPEGThumbnail', 'TIFFThumbnail', 'Filename', 'EXIF MakerNote']}\n    except Exception as e:\n        logger.error(f\"Error extracting metadata from {image_path}: {e}\")\n        return {}\nclass ImageZipResult(BaseModel):",
         "detail": "retrieveimagesfromfile",
         "documentation": {}
     },
