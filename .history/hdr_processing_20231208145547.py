@@ -189,8 +189,6 @@ class UnifiedHDRProcessingInvocation(BaseInvocation):
 
 # Invocation for retrieving images from file or directory
 @invocation(
-    class RetrieveImagesFromFileInvocation(BaseInvocation):
-
     "Retrieve_Images_From_File_Unique",  # Changed name to be unique
     title="Retrieve Images from File or Directory",
     tags=["image", "file"],
@@ -198,8 +196,6 @@ class UnifiedHDRProcessingInvocation(BaseInvocation):
     version="0.1.0",
     use_cache=False
 )
-
-
 class RetrieveImagesFromFileInvocation(BaseInvocation):
     input_path: str = InputField(description="Path to the file or directory containing images")
     save_to_zip: bool = InputField(description="Save all retrieved images to a ZIP file.", default=False)

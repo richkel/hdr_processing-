@@ -13,17 +13,20 @@ logger = logging.getLogger(__name__)
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 
+
 def extract_metadata(image_path):
     try:
         with open(image_path, 'rb') as img_file:
             tags = exifread.process_file(img_file)
             return {tag: str(tags[tag]) for tag in tags if tag not in ['JPEGThumbnail', 'TIFFThumbnail', 'Filename', 'EXIF MakerNote']}
     except Exception as e:
-        logger.error(f"Error extracting metadata from {image_path}: {e}")
+        logger.error(f"Error extracting metadata from {image_path}: {e}", exc_info=True)
         return {}
+
 
 class ImageZipResult(BaseModel):
     message: str
+
 
 @invocation(
     "Retrieve_Images_From_File",
@@ -58,7 +61,7 @@ class RetrieveImagesFromFileInvocation(BaseInvocation):
                         )
                         processed_images.append(ImageField(image_name=invoke_image.image_name))
                 except Exception as img_error:
-                    logger.error(f"Error processing image {image_path}: {img_error}")
+                    logger.error(f"Error processing image {image_path}: {img_error}", exc_info=True)
 
             if self.save_to_zip:
                 zip_file_name = os.path.join(self.zip_save_path or SCRIPT_DIR, "images.zip")
@@ -73,10 +76,10 @@ class RetrieveImagesFromFileInvocation(BaseInvocation):
             return ImageCollectionOutput(collection=processed_images, metadata=metadata_collection, result_message=result_message)
 
         except FileNotFoundError as e:
-            logger.error(f"File not found: {e}")
+            logger.error(f"File not found: {e}", exc_info=True)
             return ImageCollectionOutput(collection=[], metadata=[], result_message=f"Error: {e}")
         except Exception as e:
-            logger.error(f"Unexpected error: {e}")
+            logger.error(f"Unexpected error: {e}", exc_info=True)
             return ImageCollectionOutput(collection=[], metadata=[], result_message=f"Unexpected error: {e}")
 
     def get_images_from_path(self, path):
@@ -87,6 +90,7 @@ class RetrieveImagesFromFileInvocation(BaseInvocation):
                 return [line.strip() for line in file.readlines() if os.path.isfile(line.strip())]
         else:
             raise FileNotFoundError(f"The specified path does not exist: {path}")
+
 
 if __name__ == "__main__":
     # Example usage or testing of the node
