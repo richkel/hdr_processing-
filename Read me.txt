@@ -33,7 +33,7 @@ Copy code
 
 pip install -r requirements.txt
 
--------------------------------------------------------------------YOUR ENVIRONMENT IS NOW SET UP WITH ALL THE NECESSARY DEPENDENCIES.-------------------------------------------------------------------
+----------------------------------------YOUR ENVIRONMENT IS NOW SET UP WITH ALL THE NECESSARY DEPENDENCIES.-------------------------------------------------------------------
 
 HDRProcessingInvocation (hdr_processing.py):
 

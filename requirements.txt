@@ -1,4 +1,6 @@
-opencv-python
-numpy
-Pillow
-pydantic
+numpy==1.22.3
+opencv-python==4.8.1
+Pillow==9.1.0
+pydantic==1.9.0
+exifread==2.3.2
+invokeai==1.0.0
