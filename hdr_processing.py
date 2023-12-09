@@ -5,13 +5,13 @@ import logging
 import exifread
 import os
 import zipfile
-from PIL import Image, ImageEnhance
+from PIL import Image, ImageEnhance, ImageFilter
 from concurrent.futures import ThreadPoolExecutor
 from invokeai.app.invocations.baseinvocation import BaseInvocation, InputField, InvocationContext, invocation
 from invokeai.app.invocations.primitives import ImageField, ImageCollectionOutput
 
 # Enhanced logging setup
-logging.basicConfig(level=logging.INFO)  # Adjusted to INFO
+logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 
@@ -174,23 +174,20 @@ class UnifiedHDRProcessingInvocation(BaseInvocation):
             else:
                 logger.error("Invalid input for HDR processing: insufficient images or missing exposure data", exc_info=True)
                 raise ValueError("Invalid input for HDR processing.")
-            try:
-                hdr_result_pil = Image.fromarray(cv2.cvtColor(hdr_result, cv2.COLOR_BGR2RGB))
-                output_image_name = f"Unified_HDR_result_{context.graph_execution_state_id}.jpg"
-                hdr_result_pil.save(output_image_name)
-                output_images.append(ImageField(image_name=output_image_name))
 
-                return ImageCollectionOutput(images=output_images, result_message="HDR processing completed successfully.")
-            except Exception as e:
-                logger.error("Unexpected error in Unified HDR processing node", exc_info=True)
-                # Fix for ValidationError
-                return ImageCollectionOutput(images=output_images, result_message=f"Unexpected error occurred: {e}")
+            hdr_result_pil = Image.fromarray(cv2.cvtColor(hdr_result, cv2.COLOR_BGR2RGB))
+            output_image_name = f"Unified_HDR_result_{context.graph_execution_state_id}.jpg"
+            hdr_result_pil.save(output_image_name)
+            output_images.append(ImageField(image_name=output_image_name))
+
+            return ImageCollectionOutput(images=output_images, result_message="HDR processing completed successfully.")
+        except Exception as e:
+            logger.error("Unexpected error in Unified HDR processing node", exc_info=True)
+            return ImageCollectionOutput(images=[], result_message=f"Unexpected error occurred: {e}")
 
 
 # Invocation for retrieving images from file or directory
 @invocation(
-    class RetrieveImagesFromFileInvocation(BaseInvocation):
-
     "Retrieve_Images_From_File_Unique",  # Changed name to be unique
     title="Retrieve Images from File or Directory",
     tags=["image", "file"],
@@ -198,8 +195,6 @@ class UnifiedHDRProcessingInvocation(BaseInvocation):
     version="0.1.0",
     use_cache=False
 )
-
-
 class RetrieveImagesFromFileInvocation(BaseInvocation):
     input_path: str = InputField(description="Path to the file or directory containing images")
     save_to_zip: bool = InputField(description="Save all retrieved images to a ZIP file.", default=False)
@@ -255,68 +250,61 @@ class RetrieveImagesFromFileInvocation(BaseInvocation):
         else:
             raise FileNotFoundError(f"The specified path does not exist: {path}")
 
-# Additional nodes and functions can be added here following the same structure.
+# Additional custom functions or nodes can be added below
 
 
-if __name__ == "__main__":
-    # Add logging statements to track the flow of the program
-    logger.debug("Starting the program")
+# Example of an additional custom function
+def custom_image_processing_function(image_path):
+    """
+    Custom image processing function.
 
-    # Example usage or testing of the node
-    retrieve_invocation = RetrieveImagesFromFileInvocation()
-    result = retrieve_invocation.invoke(context)
+    Args:
+        image_path (str): Path to the image file.
 
-    logger.debug("Program execution completed")
-    # Additional custom functions or nodes can be added below
+    Returns:
+        Processed image object.
+    """
+    try:
+        # Placeholder for actual image processing logic
+        processed_image = some_image_processing_function(image_path)
+        return processed_image
+    except Exception as e:
+        logger.error(f"Error in custom image processing for {image_path}: {e}", exc_info=True)
+        return None
 
-    # Example of an additional custom function
-    def custom_image_processing_function(image_path):
-        """
-        Custom image processing function.
 
-        Args:
-            image_path (str): Path to the image file.
+# Example of an additional custom node
+@invocation(
+    "Custom_Image_Processing",
+    title="Custom Image Processing",
+    tags=["image", "processing"],
+    category="image",
+    version="1.0.0",
+    use_cache=False
+)
+class CustomImageProcessingInvocation(BaseInvocation):
+    input_image: ImageField = InputField(description="Input image for processing")
 
-        Returns:
-            Processed image object.
-        """
+    def invoke(self, context: InvocationContext) -> ImageCollectionOutput:
         try:
-            # Placeholder for actual image processing logic
-            processed_image = some_image_processing_function(image_path)
-            return processed_image
+            image_path = context.services.images.get_base_path() + self.input_image.image_name
+            processed_image = custom_image_processing_function(image_path)
+            if processed_image:
+                output_image_name = f"Processed_{self.input_image.image_name}"
+                processed_image.save(output_image_name)
+                output_image_field = ImageField(image_name=output_image_name)
+                return ImageCollectionOutput(images=[output_image_field], result_message="Image processed successfully.")
+            else:
+                return ImageCollectionOutput(images=[], result_message="Failed to process the image.")
         except Exception as e:
-            logger.error(f"Error in custom image processing for {image_path}: {e}", exc_info=True)
-            return None
+            logger.error("Unexpected error in Custom Image Processing node", exc_info=True)
+            return ImageCollectionOutput(images=[], result_message=f"Unexpected error occurred: {e}")
 
-    # Example of an additional custom node
-    @invocation(
-        "Custom_Image_Processing",
-        title="Custom Image Processing",
-        tags=["image", "processing"],
-        category="image",
-        version="1.0.0",
-        use_cache=False
-    )
-    class CustomImageProcessingInvocation(BaseInvocation):
-        input_image: ImageField = InputField(description="Input image for processing")
 
-        def invoke(self, context: InvocationContext) -> ImageCollectionOutput:
-            try:
-                image_path = context.services.images.get_base_path() + self.input_image.image_name
-                processed_image = custom_image_processing_function(image_path)
-                if processed_image:
-                    output_image_name = f"Processed_{self.input_image.image_name}"
-                    processed_image.save(output_image_name)
-                    output_image_field = ImageField(image_name=output_image_name)
-                    return ImageCollectionOutput(images=[output_image_field], result_message="Image processed successfully.")
-                else:
-                    return ImageCollectionOutput(images=[], result_message="Failed to process the image.")
-            except Exception as e:
-                logger.error("Unexpected error in Custom Image Processing node", exc_info=True)
-                return ImageCollectionOutput(images=[], result_message=f"Unexpected error occurred: {e}")
+# Example usage of the additional custom node
+if __name__ == "__main__":
+    custom_invocation = CustomImageProcessingInvocation()
+    custom_result = custom_invocation.invoke(context)
+    logger.debug("Custom image processing completed")
 
-    # Example usage of the additional custom node
-    if __name__ == "__main__":
-        custom_invocation = CustomImageProcessingInvocation()
-        custom_result = custom_invocation.invoke(context)
-        logger.debug("Custom image processing completed")
+# Further custom nodes or logic can be added here.
