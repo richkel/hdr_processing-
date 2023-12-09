@@ -1,6 +1,6 @@
 {
     "workbench.view.alwaysShowHeaderActions": true,
-    "python.pythonPath": "C:\\Users\\richk\\AppData\\Local\\Microsoft\\WindowsApps\\python.exe",
+    "python.pythonPath": "c:\\Users\\richk\\invokeai\\nodes\\hdr\\.venv\\Scripts\\python.exe",
     "workbench.colorCustomizations": {
         "activityBar.background": "#4C0C61",
         "titleBar.activeBackground": "#6B1188",

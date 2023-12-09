@@ -135,6 +135,118 @@
         "documentation": {}
     },
     {
+        "label": "ImageEnhance",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "ImageFilter",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "Image",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "ImageEnhance",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "ImageFilter",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "Image",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "ImageEnhance",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "ImageFilter",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "Image",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "ImageEnhance",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "ImageFilter",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "Image",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "ThreadPoolExecutor",
+        "importPath": "concurrent.futures",
+        "description": "concurrent.futures",
+        "isExtraImport": true,
+        "detail": "concurrent.futures",
+        "documentation": {}
+    },
+    {
+        "label": "ThreadPoolExecutor",
+        "importPath": "concurrent.futures",
+        "description": "concurrent.futures",
+        "isExtraImport": true,
+        "detail": "concurrent.futures",
+        "documentation": {}
+    },
+    {
         "label": "ThreadPoolExecutor",
         "importPath": "concurrent.futures",
         "description": "concurrent.futures",
@@ -164,6 +276,150 @@
         "description": "concurrent.futures",
         "isExtraImport": true,
         "detail": "concurrent.futures",
+        "documentation": {}
+    },
+    {
+        "label": "ThreadPoolExecutor",
+        "importPath": "concurrent.futures",
+        "description": "concurrent.futures",
+        "isExtraImport": true,
+        "detail": "concurrent.futures",
+        "documentation": {}
+    },
+    {
+        "label": "ThreadPoolExecutor",
+        "importPath": "concurrent.futures",
+        "description": "concurrent.futures",
+        "isExtraImport": true,
+        "detail": "concurrent.futures",
+        "documentation": {}
+    },
+    {
+        "label": "BaseInvocation",
+        "importPath": "invokeai.app.invocations.baseinvocation",
+        "description": "invokeai.app.invocations.baseinvocation",
+        "isExtraImport": true,
+        "detail": "invokeai.app.invocations.baseinvocation",
+        "documentation": {}
+    },
+    {
+        "label": "InputField",
+        "importPath": "invokeai.app.invocations.baseinvocation",
+        "description": "invokeai.app.invocations.baseinvocation",
+        "isExtraImport": true,
+        "detail": "invokeai.app.invocations.baseinvocation",
+        "documentation": {}
+    },
+    {
+        "label": "InvocationContext",
+        "importPath": "invokeai.app.invocations.baseinvocation",
+        "description": "invokeai.app.invocations.baseinvocation",
+        "isExtraImport": true,
+        "detail": "invokeai.app.invocations.baseinvocation",
+        "documentation": {}
+    },
+    {
+        "label": "invocation",
+        "importPath": "invokeai.app.invocations.baseinvocation",
+        "description": "invokeai.app.invocations.baseinvocation",
+        "isExtraImport": true,
+        "detail": "invokeai.app.invocations.baseinvocation",
+        "documentation": {}
+    },
+    {
+        "label": "BaseInvocation",
+        "importPath": "invokeai.app.invocations.baseinvocation",
+        "description": "invokeai.app.invocations.baseinvocation",
+        "isExtraImport": true,
+        "detail": "invokeai.app.invocations.baseinvocation",
+        "documentation": {}
+    },
+    {
+        "label": "InputField",
+        "importPath": "invokeai.app.invocations.baseinvocation",
+        "description": "invokeai.app.invocations.baseinvocation",
+        "isExtraImport": true,
+        "detail": "invokeai.app.invocations.baseinvocation",
+        "documentation": {}
+    },
+    {
+        "label": "InvocationContext",
+        "importPath": "invokeai.app.invocations.baseinvocation",
+        "description": "invokeai.app.invocations.baseinvocation",
+        "isExtraImport": true,
+        "detail": "invokeai.app.invocations.baseinvocation",
+        "documentation": {}
+    },
+    {
+        "label": "invocation",
+        "importPath": "invokeai.app.invocations.baseinvocation",
+        "description": "invokeai.app.invocations.baseinvocation",
+        "isExtraImport": true,
+        "detail": "invokeai.app.invocations.baseinvocation",
+        "documentation": {}
+    },
+    {
+        "label": "BaseInvocation",
+        "importPath": "invokeai.app.invocations.baseinvocation",
+        "description": "invokeai.app.invocations.baseinvocation",
+        "isExtraImport": true,
+        "detail": "invokeai.app.invocations.baseinvocation",
+        "documentation": {}
+    },
+    {
+        "label": "InputField",
+        "importPath": "invokeai.app.invocations.baseinvocation",
+        "description": "invokeai.app.invocations.baseinvocation",
+        "isExtraImport": true,
+        "detail": "invokeai.app.invocations.baseinvocation",
+        "documentation": {}
+    },
+    {
+        "label": "InvocationContext",
+        "importPath": "invokeai.app.invocations.baseinvocation",
+        "description": "invokeai.app.invocations.baseinvocation",
+        "isExtraImport": true,
+        "detail": "invokeai.app.invocations.baseinvocation",
+        "documentation": {}
+    },
+    {
+        "label": "invocation",
+        "importPath": "invokeai.app.invocations.baseinvocation",
+        "description": "invokeai.app.invocations.baseinvocation",
+        "isExtraImport": true,
+        "detail": "invokeai.app.invocations.baseinvocation",
+        "documentation": {}
+    },
+    {
+        "label": "BaseInvocation",
+        "importPath": "invokeai.app.invocations.baseinvocation",
+        "description": "invokeai.app.invocations.baseinvocation",
+        "isExtraImport": true,
+        "detail": "invokeai.app.invocations.baseinvocation",
+        "documentation": {}
+    },
+    {
+        "label": "InputField",
+        "importPath": "invokeai.app.invocations.baseinvocation",
+        "description": "invokeai.app.invocations.baseinvocation",
+        "isExtraImport": true,
+        "detail": "invokeai.app.invocations.baseinvocation",
+        "documentation": {}
+    },
+    {
+        "label": "InvocationContext",
+        "importPath": "invokeai.app.invocations.baseinvocation",
+        "description": "invokeai.app.invocations.baseinvocation",
+        "isExtraImport": true,
+        "detail": "invokeai.app.invocations.baseinvocation",
+        "documentation": {}
+    },
+    {
+        "label": "invocation",
+        "importPath": "invokeai.app.invocations.baseinvocation",
+        "description": "invokeai.app.invocations.baseinvocation",
+        "isExtraImport": true,
+        "detail": "invokeai.app.invocations.baseinvocation",
         "documentation": {}
     },
     {
@@ -412,6 +668,70 @@
         "description": "invokeai.app.invocations.baseinvocation",
         "isExtraImport": true,
         "detail": "invokeai.app.invocations.baseinvocation",
+        "documentation": {}
+    },
+    {
+        "label": "ImageField",
+        "importPath": "invokeai.app.invocations.primitives",
+        "description": "invokeai.app.invocations.primitives",
+        "isExtraImport": true,
+        "detail": "invokeai.app.invocations.primitives",
+        "documentation": {}
+    },
+    {
+        "label": "ImageCollectionOutput",
+        "importPath": "invokeai.app.invocations.primitives",
+        "description": "invokeai.app.invocations.primitives",
+        "isExtraImport": true,
+        "detail": "invokeai.app.invocations.primitives",
+        "documentation": {}
+    },
+    {
+        "label": "ImageField",
+        "importPath": "invokeai.app.invocations.primitives",
+        "description": "invokeai.app.invocations.primitives",
+        "isExtraImport": true,
+        "detail": "invokeai.app.invocations.primitives",
+        "documentation": {}
+    },
+    {
+        "label": "ImageCollectionOutput",
+        "importPath": "invokeai.app.invocations.primitives",
+        "description": "invokeai.app.invocations.primitives",
+        "isExtraImport": true,
+        "detail": "invokeai.app.invocations.primitives",
+        "documentation": {}
+    },
+    {
+        "label": "ImageField",
+        "importPath": "invokeai.app.invocations.primitives",
+        "description": "invokeai.app.invocations.primitives",
+        "isExtraImport": true,
+        "detail": "invokeai.app.invocations.primitives",
+        "documentation": {}
+    },
+    {
+        "label": "ImageCollectionOutput",
+        "importPath": "invokeai.app.invocations.primitives",
+        "description": "invokeai.app.invocations.primitives",
+        "isExtraImport": true,
+        "detail": "invokeai.app.invocations.primitives",
+        "documentation": {}
+    },
+    {
+        "label": "ImageField",
+        "importPath": "invokeai.app.invocations.primitives",
+        "description": "invokeai.app.invocations.primitives",
+        "isExtraImport": true,
+        "detail": "invokeai.app.invocations.primitives",
+        "documentation": {}
+    },
+    {
+        "label": "ImageCollectionOutput",
+        "importPath": "invokeai.app.invocations.primitives",
+        "description": "invokeai.app.invocations.primitives",
+        "isExtraImport": true,
+        "detail": "invokeai.app.invocations.primitives",
         "documentation": {}
     },
     {
@@ -840,6 +1160,474 @@
         "documentation": {}
     },
     {
+        "label": "UnifiedHDRProcessingInvocation",
+        "kind": 6,
+        "importPath": ".history.hdr_processing_20231209142823",
+        "description": ".history.hdr_processing_20231209142823",
+        "peekOfCode": "class UnifiedHDRProcessingInvocation(BaseInvocation):\n    input_images: list[ImageField] = InputField(description=\"Input images for HDR processing\")\n    exposure_times: list[float] = InputField(description=\"Exposure times for each input image\")\n    pseudo_exposure_factors: list[float] = InputField(description=\"Pseudo exposure factors for single image HDR\", default=[])\n    def adjust_brightness(self, image, factor):\n        enhancer = ImageEnhance.Brightness(image)\n        return enhancer.enhance(factor)\n    def create_pseudo_hdr_image(self, base_image, factors):\n        pseudo_hdr_stack = [self.adjust_brightness(base_image, factor) for factor in factors]\n        return [cv2.cvtColor(np.array(image), cv2.COLOR_RGB2BGR) for image in pseudo_hdr_stack]",
+        "detail": ".history.hdr_processing_20231209142823",
+        "documentation": {}
+    },
+    {
+        "label": "RetrieveImagesFromFileInvocation",
+        "kind": 6,
+        "importPath": ".history.hdr_processing_20231209142823",
+        "description": ".history.hdr_processing_20231209142823",
+        "peekOfCode": "class RetrieveImagesFromFileInvocation(BaseInvocation):\n    input_path: str = InputField(description=\"Path to the file or directory containing images\")\n    save_to_zip: bool = InputField(description=\"Save all retrieved images to a ZIP file.\", default=False)\n    zip_save_path: str = InputField(description=\"Custom path to save the ZIP file.\", default=\"\")\n    def invoke(self, context: InvocationContext) -> ImageCollectionOutput:\n        try:\n            selected_images = self.get_images_from_path(self.input_path)\n            processed_images = []\n            metadata_collection = []\n            for image_path in selected_images:",
+        "detail": ".history.hdr_processing_20231209142823",
+        "documentation": {}
+    },
+    {
+        "label": "CustomImageProcessingInvocation",
+        "kind": 6,
+        "importPath": ".history.hdr_processing_20231209142823",
+        "description": ".history.hdr_processing_20231209142823",
+        "peekOfCode": "class CustomImageProcessingInvocation(BaseInvocation):\n    input_image: ImageField = InputField(description=\"Input image for processing\")\n    def invoke(self, context: InvocationContext) -> ImageCollectionOutput:\n        try:\n            image_path = context.services.images.get_base_path() + self.input_image.image_name\n            processed_image = custom_image_processing_function(image_path)\n            if processed_image:\n                output_image_name = f\"Processed_{self.input_image.image_name}\"\n                processed_image.save(output_image_name)\n                output_image_field = ImageField(image_name=output_image_name)",
+        "detail": ".history.hdr_processing_20231209142823",
+        "documentation": {}
+    },
+    {
+        "label": "extract_metadata",
+        "kind": 2,
+        "importPath": ".history.hdr_processing_20231209142823",
+        "description": ".history.hdr_processing_20231209142823",
+        "peekOfCode": "def extract_metadata(image_path):\n    try:\n        with open(image_path, 'rb') as img_file:\n            tags = exifread.process_file(img_file)\n            return {tag: str(tags[tag]) for tag in tags if tag not in ['JPEGThumbnail', 'TIFFThumbnail', 'Filename', 'EXIF MakerNote']}\n    except Exception as e:\n        logger.error(f\"Error extracting metadata from {image_path}: {e}\", exc_info=True)\n        return {}\n# HDR Processing Functions\ndef linearWeight(pixel_value):",
+        "detail": ".history.hdr_processing_20231209142823",
+        "documentation": {}
+    },
+    {
+        "label": "linearWeight",
+        "kind": 2,
+        "importPath": ".history.hdr_processing_20231209142823",
+        "description": ".history.hdr_processing_20231209142823",
+        "peekOfCode": "def linearWeight(pixel_value):\n    z_min, z_max = 0., 255.\n    return pixel_value - z_min if pixel_value <= (z_min + z_max) / 2 else z_max - pixel_value\ndef sampleIntensities(images):\n    z_min, z_max = 0, 255\n    num_intensities = z_max - z_min + 1\n    num_images = len(images)\n    intensity_values = np.zeros((num_intensities, num_images), dtype=np.uint8)\n    mid_img = images[num_images // 2]\n    for i in range(z_min, z_max + 1):",
+        "detail": ".history.hdr_processing_20231209142823",
+        "documentation": {}
+    },
+    {
+        "label": "sampleIntensities",
+        "kind": 2,
+        "importPath": ".history.hdr_processing_20231209142823",
+        "description": ".history.hdr_processing_20231209142823",
+        "peekOfCode": "def sampleIntensities(images):\n    z_min, z_max = 0, 255\n    num_intensities = z_max - z_min + 1\n    num_images = len(images)\n    intensity_values = np.zeros((num_intensities, num_images), dtype=np.uint8)\n    mid_img = images[num_images // 2]\n    for i in range(z_min, z_max + 1):\n        rows, cols = np.where(mid_img == i)\n        if len(rows) != 0:\n            idx = random.randrange(len(rows))",
+        "detail": ".history.hdr_processing_20231209142823",
+        "documentation": {}
+    },
+    {
+        "label": "computeResponseCurve",
+        "kind": 2,
+        "importPath": ".history.hdr_processing_20231209142823",
+        "description": ".history.hdr_processing_20231209142823",
+        "peekOfCode": "def computeResponseCurve(intensity_samples, log_exposures, smoothing_lambda, weighting_function):\n    z_min, z_max = 0, 255\n    intensity_range = 255\n    num_samples = intensity_samples.shape[0]\n    num_images = len(log_exposures)\n    mat_A = np.zeros((num_images * num_samples + intensity_range, num_samples + intensity_range + 1), dtype=np.float64)\n    mat_b = np.zeros((mat_A.shape[0], 1), dtype=np.float64)\n    k = 0\n    for i in range(num_samples):\n        for j in range(num_images):",
+        "detail": ".history.hdr_processing_20231209142823",
+        "documentation": {}
+    },
+    {
+        "label": "computeRadianceMap",
+        "kind": 2,
+        "importPath": ".history.hdr_processing_20231209142823",
+        "description": ".history.hdr_processing_20231209142823",
+        "peekOfCode": "def computeRadianceMap(images, log_exposure_times, response_curve, weighting_function):\n    img_shape = images[0].shape\n    img_rad_map = np.zeros(img_shape, dtype=np.float64)\n    num_images = len(images)\n    for i in range(img_shape[0]):\n        for j in range(img_shape[1]):\n            g = np.array([response_curve[images[k][i, j]] for k in range(num_images)])\n            w = np.array([weighting_function(images[k][i, j]) for k in range(num_images)])\n            SumW = np.sum(w)\n            if SumW > 0:",
+        "detail": ".history.hdr_processing_20231209142823",
+        "documentation": {}
+    },
+    {
+        "label": "globalToneMapping",
+        "kind": 2,
+        "importPath": ".history.hdr_processing_20231209142823",
+        "description": ".history.hdr_processing_20231209142823",
+        "peekOfCode": "def globalToneMapping(image, gamma):\n    image_corrected = cv2.pow(image / 255., 1.0 / gamma)\n    return image_corrected\ndef intensityAdjustment(image, template):\n    m, n, channel = image.shape\n    output = np.zeros((m, n, channel))\n    for ch in range(channel):\n        image_avg, template_avg = np.average(image[:,:, ch]), np.average(template[:,:, ch])\n        output[..., ch] = image[..., ch] * (template_avg / image_avg)\n    return output",
+        "detail": ".history.hdr_processing_20231209142823",
+        "documentation": {}
+    },
+    {
+        "label": "intensityAdjustment",
+        "kind": 2,
+        "importPath": ".history.hdr_processing_20231209142823",
+        "description": ".history.hdr_processing_20231209142823",
+        "peekOfCode": "def intensityAdjustment(image, template):\n    m, n, channel = image.shape\n    output = np.zeros((m, n, channel))\n    for ch in range(channel):\n        image_avg, template_avg = np.average(image[:,:, ch]), np.average(template[:,:, ch])\n        output[..., ch] = image[..., ch] * (template_avg / image_avg)\n    return output\ndef computeHDR(images, log_exposure_times, smoothing_lambda=100., gamma=0.6):\n    num_channels = images[0].shape[2]\n    hdr_image = np.zeros(images[0].shape, dtype=np.float64)",
+        "detail": ".history.hdr_processing_20231209142823",
+        "documentation": {}
+    },
+    {
+        "label": "computeHDR",
+        "kind": 2,
+        "importPath": ".history.hdr_processing_20231209142823",
+        "description": ".history.hdr_processing_20231209142823",
+        "peekOfCode": "def computeHDR(images, log_exposure_times, smoothing_lambda=100., gamma=0.6):\n    num_channels = images[0].shape[2]\n    hdr_image = np.zeros(images[0].shape, dtype=np.float64)\n    for channel in range(num_channels):\n        layer_stack = [img[:,:, channel] for img in images]\n        intensity_samples = sampleIntensities(layer_stack)\n        response_curve = computeResponseCurve(intensity_samples, log_exposure_times, smoothing_lambda, linearWeight)\n        img_rad_map = computeRadianceMap(layer_stack, log_exposure_times, response_curve, linearWeight)\n        hdr_image[..., channel] = cv2.normalize(img_rad_map, alpha=0, beta=255, norm_type=cv2.NORM_MINMAX)\n    image_mapped = globalToneMapping(hdr_image, gamma)",
+        "detail": ".history.hdr_processing_20231209142823",
+        "documentation": {}
+    },
+    {
+        "label": "custom_image_processing_function",
+        "kind": 2,
+        "importPath": ".history.hdr_processing_20231209142823",
+        "description": ".history.hdr_processing_20231209142823",
+        "peekOfCode": "def custom_image_processing_function(image_path):\n    \"\"\"\n    Custom image processing function.\n    Args:\n        image_path (str): Path to the image file.\n    Returns:\n        Processed image object.\n    \"\"\"\n    try:\n        # Placeholder for actual image processing logic",
+        "detail": ".history.hdr_processing_20231209142823",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "kind": 5,
+        "importPath": ".history.hdr_processing_20231209142823",
+        "description": ".history.hdr_processing_20231209142823",
+        "peekOfCode": "logger = logging.getLogger(__name__)\n# Function to extract metadata\ndef extract_metadata(image_path):\n    try:\n        with open(image_path, 'rb') as img_file:\n            tags = exifread.process_file(img_file)\n            return {tag: str(tags[tag]) for tag in tags if tag not in ['JPEGThumbnail', 'TIFFThumbnail', 'Filename', 'EXIF MakerNote']}\n    except Exception as e:\n        logger.error(f\"Error extracting metadata from {image_path}: {e}\", exc_info=True)\n        return {}",
+        "detail": ".history.hdr_processing_20231209142823",
+        "documentation": {}
+    },
+    {
+        "label": "UnifiedHDRProcessingInvocation",
+        "kind": 6,
+        "importPath": ".history.hdr_processing_20231209144511",
+        "description": ".history.hdr_processing_20231209144511",
+        "peekOfCode": "class UnifiedHDRProcessingInvocation(BaseInvocation):\n    input_images: list[ImageField] = InputField(description=\"Input images for HDR processing\")\n    exposure_times: list[float] = InputField(description=\"Exposure times for each input image\")\n    pseudo_exposure_factors: list[float] = InputField(description=\"Pseudo exposure factors for single image HDR\", default=[])\n    def adjust_brightness(self, image, factor):\n        enhancer = ImageEnhance.Brightness(image)\n        return enhancer.enhance(factor)\n    def create_pseudo_hdr_image(self, base_image, factors):\n        pseudo_hdr_stack = [self.adjust_brightness(base_image, factor) for factor in factors]\n        return [cv2.cvtColor(np.array(image), cv2.COLOR_RGB2BGR) for image in pseudo_hdr_stack]",
+        "detail": ".history.hdr_processing_20231209144511",
+        "documentation": {}
+    },
+    {
+        "label": "RetrieveImagesFromFileInvocation",
+        "kind": 6,
+        "importPath": ".history.hdr_processing_20231209144511",
+        "description": ".history.hdr_processing_20231209144511",
+        "peekOfCode": "class RetrieveImagesFromFileInvocation(BaseInvocation):\n    input_path: str = InputField(description=\"Path to the file or directory containing images\")\n    save_to_zip: bool = InputField(description=\"Save all retrieved images to a ZIP file.\", default=False)\n    zip_save_path: str = InputField(description=\"Custom path to save the ZIP file.\", default=\"\")\n    def invoke(self, context: InvocationContext) -> ImageCollectionOutput:\n        try:\n            selected_images = self.get_images_from_path(self.input_path)\n            processed_images = []\n            metadata_collection = []\n            for image_path in selected_images:",
+        "detail": ".history.hdr_processing_20231209144511",
+        "documentation": {}
+    },
+    {
+        "label": "CustomImageProcessingInvocation",
+        "kind": 6,
+        "importPath": ".history.hdr_processing_20231209144511",
+        "description": ".history.hdr_processing_20231209144511",
+        "peekOfCode": "class CustomImageProcessingInvocation(BaseInvocation):\n    input_image: ImageField = InputField(description=\"Input image for processing\")\n    def invoke(self, context: InvocationContext) -> ImageCollectionOutput:\n        try:\n            image_path = context.services.images.get_base_path() + self.input_image.image_name\n            processed_image = custom_image_processing_function(image_path)\n            if processed_image:\n                output_image_name = f\"Processed_{self.input_image.image_name}\"\n                processed_image.save(output_image_name)\n                output_image_field = ImageField(image_name=output_image_name)",
+        "detail": ".history.hdr_processing_20231209144511",
+        "documentation": {}
+    },
+    {
+        "label": "extract_metadata",
+        "kind": 2,
+        "importPath": ".history.hdr_processing_20231209144511",
+        "description": ".history.hdr_processing_20231209144511",
+        "peekOfCode": "def extract_metadata(image_path):\n    try:\n        with open(image_path, 'rb') as img_file:\n            tags = exifread.process_file(img_file)\n            return {tag: str(tags[tag]) for tag in tags if tag not in ['JPEGThumbnail', 'TIFFThumbnail', 'Filename', 'EXIF MakerNote']}\n    except Exception as e:\n        logger.error(f\"Error extracting metadata from {image_path}: {e}\", exc_info=True)\n        return {}\n# HDR Processing Functions\ndef linearWeight(pixel_value):",
+        "detail": ".history.hdr_processing_20231209144511",
+        "documentation": {}
+    },
+    {
+        "label": "linearWeight",
+        "kind": 2,
+        "importPath": ".history.hdr_processing_20231209144511",
+        "description": ".history.hdr_processing_20231209144511",
+        "peekOfCode": "def linearWeight(pixel_value):\n    z_min, z_max = 0., 255.\n    return pixel_value - z_min if pixel_value <= (z_min + z_max) / 2 else z_max - pixel_value\ndef sampleIntensities(images):\n    z_min, z_max = 0, 255\n    num_intensities = z_max - z_min + 1\n    num_images = len(images)\n    intensity_values = np.zeros((num_intensities, num_images), dtype=np.uint8)\n    mid_img = images[num_images // 2]\n    for i in range(z_min, z_max + 1):",
+        "detail": ".history.hdr_processing_20231209144511",
+        "documentation": {}
+    },
+    {
+        "label": "sampleIntensities",
+        "kind": 2,
+        "importPath": ".history.hdr_processing_20231209144511",
+        "description": ".history.hdr_processing_20231209144511",
+        "peekOfCode": "def sampleIntensities(images):\n    z_min, z_max = 0, 255\n    num_intensities = z_max - z_min + 1\n    num_images = len(images)\n    intensity_values = np.zeros((num_intensities, num_images), dtype=np.uint8)\n    mid_img = images[num_images // 2]\n    for i in range(z_min, z_max + 1):\n        rows, cols = np.where(mid_img == i)\n        if len(rows) != 0:\n            idx = random.randrange(len(rows))",
+        "detail": ".history.hdr_processing_20231209144511",
+        "documentation": {}
+    },
+    {
+        "label": "computeResponseCurve",
+        "kind": 2,
+        "importPath": ".history.hdr_processing_20231209144511",
+        "description": ".history.hdr_processing_20231209144511",
+        "peekOfCode": "def computeResponseCurve(intensity_samples, log_exposures, smoothing_lambda, weighting_function):\n    z_min, z_max = 0, 255\n    intensity_range = 255\n    num_samples = intensity_samples.shape[0]\n    num_images = len(log_exposures)\n    mat_A = np.zeros((num_images * num_samples + intensity_range, num_samples + intensity_range + 1), dtype=np.float64)\n    mat_b = np.zeros((mat_A.shape[0], 1), dtype=np.float64)\n    k = 0\n    for i in range(num_samples):\n        for j in range(num_images):",
+        "detail": ".history.hdr_processing_20231209144511",
+        "documentation": {}
+    },
+    {
+        "label": "computeRadianceMap",
+        "kind": 2,
+        "importPath": ".history.hdr_processing_20231209144511",
+        "description": ".history.hdr_processing_20231209144511",
+        "peekOfCode": "def computeRadianceMap(images, log_exposure_times, response_curve, weighting_function):\n    img_shape = images[0].shape\n    img_rad_map = np.zeros(img_shape, dtype=np.float64)\n    num_images = len(images)\n    for i in range(img_shape[0]):\n        for j in range(img_shape[1]):\n            g = np.array([response_curve[images[k][i, j]] for k in range(num_images)])\n            w = np.array([weighting_function(images[k][i, j]) for k in range(num_images)])\n            SumW = np.sum(w)\n            if SumW > 0:",
+        "detail": ".history.hdr_processing_20231209144511",
+        "documentation": {}
+    },
+    {
+        "label": "globalToneMapping",
+        "kind": 2,
+        "importPath": ".history.hdr_processing_20231209144511",
+        "description": ".history.hdr_processing_20231209144511",
+        "peekOfCode": "def globalToneMapping(image, gamma):\n    image_corrected = cv2.pow(image / 255., 1.0 / gamma)\n    return image_corrected\ndef intensityAdjustment(image, template):\n    m, n, channel = image.shape\n    output = np.zeros((m, n, channel))\n    for ch in range(channel):\n        image_avg, template_avg = np.average(image[:,:, ch]), np.average(template[:,:, ch])\n        output[..., ch] = image[..., ch] * (template_avg / image_avg)\n    return output",
+        "detail": ".history.hdr_processing_20231209144511",
+        "documentation": {}
+    },
+    {
+        "label": "intensityAdjustment",
+        "kind": 2,
+        "importPath": ".history.hdr_processing_20231209144511",
+        "description": ".history.hdr_processing_20231209144511",
+        "peekOfCode": "def intensityAdjustment(image, template):\n    m, n, channel = image.shape\n    output = np.zeros((m, n, channel))\n    for ch in range(channel):\n        image_avg, template_avg = np.average(image[:,:, ch]), np.average(template[:,:, ch])\n        output[..., ch] = image[..., ch] * (template_avg / image_avg)\n    return output\ndef computeHDR(images, log_exposure_times, smoothing_lambda=100., gamma=0.6):\n    num_channels = images[0].shape[2]\n    hdr_image = np.zeros(images[0].shape, dtype=np.float64)",
+        "detail": ".history.hdr_processing_20231209144511",
+        "documentation": {}
+    },
+    {
+        "label": "computeHDR",
+        "kind": 2,
+        "importPath": ".history.hdr_processing_20231209144511",
+        "description": ".history.hdr_processing_20231209144511",
+        "peekOfCode": "def computeHDR(images, log_exposure_times, smoothing_lambda=100., gamma=0.6):\n    num_channels = images[0].shape[2]\n    hdr_image = np.zeros(images[0].shape, dtype=np.float64)\n    for channel in range(num_channels):\n        layer_stack = [img[:,:, channel] for img in images]\n        intensity_samples = sampleIntensities(layer_stack)\n        response_curve = computeResponseCurve(intensity_samples, log_exposure_times, smoothing_lambda, linearWeight)\n        img_rad_map = computeRadianceMap(layer_stack, log_exposure_times, response_curve, linearWeight)\n        hdr_image[..., channel] = cv2.normalize(img_rad_map, alpha=0, beta=255, norm_type=cv2.NORM_MINMAX)\n    image_mapped = globalToneMapping(hdr_image, gamma)",
+        "detail": ".history.hdr_processing_20231209144511",
+        "documentation": {}
+    },
+    {
+        "label": "custom_image_processing_function",
+        "kind": 2,
+        "importPath": ".history.hdr_processing_20231209144511",
+        "description": ".history.hdr_processing_20231209144511",
+        "peekOfCode": "def custom_image_processing_function(image_path):\n    \"\"\"\n    Custom image processing function.\n    Args:\n        image_path (str): Path to the image file.\n    Returns:\n        Processed image object.\n    \"\"\"\n    try:\n        # Placeholder for actual image processing logic",
+        "detail": ".history.hdr_processing_20231209144511",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "kind": 5,
+        "importPath": ".history.hdr_processing_20231209144511",
+        "description": ".history.hdr_processing_20231209144511",
+        "peekOfCode": "logger = logging.getLogger(__name__)\n# Function to extract metadata\ndef extract_metadata(image_path):\n    try:\n        with open(image_path, 'rb') as img_file:\n            tags = exifread.process_file(img_file)\n            return {tag: str(tags[tag]) for tag in tags if tag not in ['JPEGThumbnail', 'TIFFThumbnail', 'Filename', 'EXIF MakerNote']}\n    except Exception as e:\n        logger.error(f\"Error extracting metadata from {image_path}: {e}\", exc_info=True)\n        return {}",
+        "detail": ".history.hdr_processing_20231209144511",
+        "documentation": {}
+    },
+    {
+        "label": "UnifiedHDRProcessingInvocation",
+        "kind": 6,
+        "importPath": ".history.hdr_processing_20231209144723",
+        "description": ".history.hdr_processing_20231209144723",
+        "peekOfCode": "class UnifiedHDRProcessingInvocation(BaseInvocation):\n    input_images: list[ImageField] = InputField(description=\"Input images for HDR processing\")\n    exposure_times: list[float] = InputField(description=\"Exposure times for each input image\")\n    pseudo_exposure_factors: list[float] = InputField(description=\"Pseudo exposure factors for single image HDR\", default=[])\n    def adjust_brightness(self, image, factor):\n        enhancer = ImageEnhance.Brightness(image)\n        return enhancer.enhance(factor)\n    def create_pseudo_hdr_image(self, base_image, factors):\n        pseudo_hdr_stack = [self.adjust_brightness(base_image, factor) for factor in factors]\n        return [cv2.cvtColor(np.array(image), cv2.COLOR_RGB2BGR) for image in pseudo_hdr_stack]",
+        "detail": ".history.hdr_processing_20231209144723",
+        "documentation": {}
+    },
+    {
+        "label": "RetrieveImagesFromFileInvocation",
+        "kind": 6,
+        "importPath": ".history.hdr_processing_20231209144723",
+        "description": ".history.hdr_processing_20231209144723",
+        "peekOfCode": "class RetrieveImagesFromFileInvocation(BaseInvocation):\n    input_path: str = InputField(description=\"Path to the file or directory containing images\")\n    save_to_zip: bool = InputField(description=\"Save all retrieved images to a ZIP file.\", default=False)\n    zip_save_path: str = InputField(description=\"Custom path to save the ZIP file.\", default=\"\")\n    def invoke(self, context: InvocationContext) -> ImageCollectionOutput:\n        try:\n            selected_images = self.get_images_from_path(self.input_path)\n            processed_images = []\n            metadata_collection = []\n            for image_path in selected_images:",
+        "detail": ".history.hdr_processing_20231209144723",
+        "documentation": {}
+    },
+    {
+        "label": "CustomImageProcessingInvocation",
+        "kind": 6,
+        "importPath": ".history.hdr_processing_20231209144723",
+        "description": ".history.hdr_processing_20231209144723",
+        "peekOfCode": "class CustomImageProcessingInvocation(BaseInvocation):\n    input_image: ImageField = InputField(description=\"Input image for processing\")\n    def invoke(self, context: InvocationContext) -> ImageCollectionOutput:\n        try:\n            image_path = context.services.images.get_base_path() + self.input_image.image_name\n            processed_image = custom_image_processing_function(image_path)\n            if processed_image:\n                output_image_name = f\"Processed_{self.input_image.image_name}\"\n                processed_image.save(output_image_name)\n                output_image_field = ImageField(image_name=output_image_name)",
+        "detail": ".history.hdr_processing_20231209144723",
+        "documentation": {}
+    },
+    {
+        "label": "extract_metadata",
+        "kind": 2,
+        "importPath": ".history.hdr_processing_20231209144723",
+        "description": ".history.hdr_processing_20231209144723",
+        "peekOfCode": "def extract_metadata(image_path):\n    try:\n        with open(image_path, 'rb') as img_file:\n            tags = exifread.process_file(img_file)\n            return {tag: str(tags[tag]) for tag in tags if tag not in ['JPEGThumbnail', 'TIFFThumbnail', 'Filename', 'EXIF MakerNote']}\n    except Exception as e:\n        logger.error(f\"Error extracting metadata from {image_path}: {e}\", exc_info=True)\n        return {}\n# HDR Processing Functions\ndef linearWeight(pixel_value):",
+        "detail": ".history.hdr_processing_20231209144723",
+        "documentation": {}
+    },
+    {
+        "label": "linearWeight",
+        "kind": 2,
+        "importPath": ".history.hdr_processing_20231209144723",
+        "description": ".history.hdr_processing_20231209144723",
+        "peekOfCode": "def linearWeight(pixel_value):\n    z_min, z_max = 0., 255.\n    return pixel_value - z_min if pixel_value <= (z_min + z_max) / 2 else z_max - pixel_value\ndef sampleIntensities(images):\n    z_min, z_max = 0, 255\n    num_intensities = z_max - z_min + 1\n    num_images = len(images)\n    intensity_values = np.zeros((num_intensities, num_images), dtype=np.uint8)\n    mid_img = images[num_images // 2]\n    for i in range(z_min, z_max + 1):",
+        "detail": ".history.hdr_processing_20231209144723",
+        "documentation": {}
+    },
+    {
+        "label": "sampleIntensities",
+        "kind": 2,
+        "importPath": ".history.hdr_processing_20231209144723",
+        "description": ".history.hdr_processing_20231209144723",
+        "peekOfCode": "def sampleIntensities(images):\n    z_min, z_max = 0, 255\n    num_intensities = z_max - z_min + 1\n    num_images = len(images)\n    intensity_values = np.zeros((num_intensities, num_images), dtype=np.uint8)\n    mid_img = images[num_images // 2]\n    for i in range(z_min, z_max + 1):\n        rows, cols = np.where(mid_img == i)\n        if len(rows) != 0:\n            idx = random.randrange(len(rows))",
+        "detail": ".history.hdr_processing_20231209144723",
+        "documentation": {}
+    },
+    {
+        "label": "computeResponseCurve",
+        "kind": 2,
+        "importPath": ".history.hdr_processing_20231209144723",
+        "description": ".history.hdr_processing_20231209144723",
+        "peekOfCode": "def computeResponseCurve(intensity_samples, log_exposures, smoothing_lambda, weighting_function):\n    z_min, z_max = 0, 255\n    intensity_range = 255\n    num_samples = intensity_samples.shape[0]\n    num_images = len(log_exposures)\n    mat_A = np.zeros((num_images * num_samples + intensity_range, num_samples + intensity_range + 1), dtype=np.float64)\n    mat_b = np.zeros((mat_A.shape[0], 1), dtype=np.float64)\n    k = 0\n    for i in range(num_samples):\n        for j in range(num_images):",
+        "detail": ".history.hdr_processing_20231209144723",
+        "documentation": {}
+    },
+    {
+        "label": "computeRadianceMap",
+        "kind": 2,
+        "importPath": ".history.hdr_processing_20231209144723",
+        "description": ".history.hdr_processing_20231209144723",
+        "peekOfCode": "def computeRadianceMap(images, log_exposure_times, response_curve, weighting_function):\n    img_shape = images[0].shape\n    img_rad_map = np.zeros(img_shape, dtype=np.float64)\n    num_images = len(images)\n    for i in range(img_shape[0]):\n        for j in range(img_shape[1]):\n            g = np.array([response_curve[images[k][i, j]] for k in range(num_images)])\n            w = np.array([weighting_function(images[k][i, j]) for k in range(num_images)])\n            SumW = np.sum(w)\n            if SumW > 0:",
+        "detail": ".history.hdr_processing_20231209144723",
+        "documentation": {}
+    },
+    {
+        "label": "globalToneMapping",
+        "kind": 2,
+        "importPath": ".history.hdr_processing_20231209144723",
+        "description": ".history.hdr_processing_20231209144723",
+        "peekOfCode": "def globalToneMapping(image, gamma):\n    image_corrected = cv2.pow(image / 255., 1.0 / gamma)\n    return image_corrected\ndef intensityAdjustment(image, template):\n    m, n, channel = image.shape\n    output = np.zeros((m, n, channel))\n    for ch in range(channel):\n        image_avg, template_avg = np.average(image[:,:, ch]), np.average(template[:,:, ch])\n        output[..., ch] = image[..., ch] * (template_avg / image_avg)\n    return output",
+        "detail": ".history.hdr_processing_20231209144723",
+        "documentation": {}
+    },
+    {
+        "label": "intensityAdjustment",
+        "kind": 2,
+        "importPath": ".history.hdr_processing_20231209144723",
+        "description": ".history.hdr_processing_20231209144723",
+        "peekOfCode": "def intensityAdjustment(image, template):\n    m, n, channel = image.shape\n    output = np.zeros((m, n, channel))\n    for ch in range(channel):\n        image_avg, template_avg = np.average(image[:,:, ch]), np.average(template[:,:, ch])\n        output[..., ch] = image[..., ch] * (template_avg / image_avg)\n    return output\ndef computeHDR(images, log_exposure_times, smoothing_lambda=100., gamma=0.6):\n    num_channels = images[0].shape[2]\n    hdr_image = np.zeros(images[0].shape, dtype=np.float64)",
+        "detail": ".history.hdr_processing_20231209144723",
+        "documentation": {}
+    },
+    {
+        "label": "computeHDR",
+        "kind": 2,
+        "importPath": ".history.hdr_processing_20231209144723",
+        "description": ".history.hdr_processing_20231209144723",
+        "peekOfCode": "def computeHDR(images, log_exposure_times, smoothing_lambda=100., gamma=0.6):\n    num_channels = images[0].shape[2]\n    hdr_image = np.zeros(images[0].shape, dtype=np.float64)\n    for channel in range(num_channels):\n        layer_stack = [img[:,:, channel] for img in images]\n        intensity_samples = sampleIntensities(layer_stack)\n        response_curve = computeResponseCurve(intensity_samples, log_exposure_times, smoothing_lambda, linearWeight)\n        img_rad_map = computeRadianceMap(layer_stack, log_exposure_times, response_curve, linearWeight)\n        hdr_image[..., channel] = cv2.normalize(img_rad_map, alpha=0, beta=255, norm_type=cv2.NORM_MINMAX)\n    image_mapped = globalToneMapping(hdr_image, gamma)",
+        "detail": ".history.hdr_processing_20231209144723",
+        "documentation": {}
+    },
+    {
+        "label": "custom_image_processing_function",
+        "kind": 2,
+        "importPath": ".history.hdr_processing_20231209144723",
+        "description": ".history.hdr_processing_20231209144723",
+        "peekOfCode": "def custom_image_processing_function(image_path):\n    \"\"\"\n    Custom image processing function.\n    Args:\n        image_path (str): Path to the image file.\n    Returns:\n        Processed image object.\n    \"\"\"\n    try:\n        # Placeholder for actual image processing logic",
+        "detail": ".history.hdr_processing_20231209144723",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "kind": 5,
+        "importPath": ".history.hdr_processing_20231209144723",
+        "description": ".history.hdr_processing_20231209144723",
+        "peekOfCode": "logger = logging.getLogger(__name__)\n# Function to extract metadata\ndef extract_metadata(image_path):\n    try:\n        with open(image_path, 'rb') as img_file:\n            tags = exifread.process_file(img_file)\n            return {tag: str(tags[tag]) for tag in tags if tag not in ['JPEGThumbnail', 'TIFFThumbnail', 'Filename', 'EXIF MakerNote']}\n    except Exception as e:\n        logger.error(f\"Error extracting metadata from {image_path}: {e}\", exc_info=True)\n        return {}",
+        "detail": ".history.hdr_processing_20231209144723",
+        "documentation": {}
+    },
+    {
+        "label": "UnifiedHDRProcessingInvocation",
+        "kind": 6,
+        "importPath": ".history.hdr_processing_20231209144814",
+        "description": ".history.hdr_processing_20231209144814",
+        "peekOfCode": "class UnifiedHDRProcessingInvocation(BaseInvocation):\n    input_images: list[ImageField] = InputField(description=\"Input images for HDR processing\")\n    exposure_times: list[float] = InputField(description=\"Exposure times for each input image\")\n    pseudo_exposure_factors: list[float] = InputField(description=\"Pseudo exposure factors for single image HDR\", default=[])\n    def adjust_brightness(self, image, factor):\n        enhancer = ImageEnhance.Brightness(image)\n        return enhancer.enhance(factor)\n    def create_pseudo_hdr_image(self, base_image, factors):\n        pseudo_hdr_stack = [self.adjust_brightness(base_image, factor) for factor in factors]\n        return [cv2.cvtColor(np.array(image), cv2.COLOR_RGB2BGR) for image in pseudo_hdr_stack]",
+        "detail": ".history.hdr_processing_20231209144814",
+        "documentation": {}
+    },
+    {
+        "label": "RetrieveImagesFromFileInvocation",
+        "kind": 6,
+        "importPath": ".history.hdr_processing_20231209144814",
+        "description": ".history.hdr_processing_20231209144814",
+        "peekOfCode": "class RetrieveImagesFromFileInvocation(BaseInvocation):\n    input_path: str = InputField(description=\"Path to the file or directory containing images\")\n    save_to_zip: bool = InputField(description=\"Save all retrieved images to a ZIP file.\", default=False)\n    zip_save_path: str = InputField(description=\"Custom path to save the ZIP file.\", default=\"\")\n    def invoke(self, context: InvocationContext) -> ImageCollectionOutput:\n        try:\n            selected_images = self.get_images_from_path(self.input_path)\n            processed_images = []\n            metadata_collection = []\n            for image_path in selected_images:",
+        "detail": ".history.hdr_processing_20231209144814",
+        "documentation": {}
+    },
+    {
+        "label": "CustomImageProcessingInvocation",
+        "kind": 6,
+        "importPath": ".history.hdr_processing_20231209144814",
+        "description": ".history.hdr_processing_20231209144814",
+        "peekOfCode": "class CustomImageProcessingInvocation(BaseInvocation):\n    input_image: ImageField = InputField(description=\"Input image for processing\")\n    def invoke(self, context: InvocationContext) -> ImageCollectionOutput:\n        try:\n            image_path = context.services.images.get_base_path() + self.input_image.image_name\n            processed_image = custom_image_processing_function(image_path)\n            if processed_image:\n                output_image_name = f\"Processed_{self.input_image.image_name}\"\n                processed_image.save(output_image_name)\n                output_image_field = ImageField(image_name=output_image_name)",
+        "detail": ".history.hdr_processing_20231209144814",
+        "documentation": {}
+    },
+    {
+        "label": "extract_metadata",
+        "kind": 2,
+        "importPath": ".history.hdr_processing_20231209144814",
+        "description": ".history.hdr_processing_20231209144814",
+        "peekOfCode": "def extract_metadata(image_path):\n    try:\n        with open(image_path, 'rb') as img_file:\n            tags = exifread.process_file(img_file)\n            return {tag: str(tags[tag]) for tag in tags if tag not in ['JPEGThumbnail', 'TIFFThumbnail', 'Filename', 'EXIF MakerNote']}\n    except Exception as e:\n        logger.error(f\"Error extracting metadata from {image_path}: {e}\", exc_info=True)\n        return {}\n# HDR Processing Functions\ndef linearWeight(pixel_value):",
+        "detail": ".history.hdr_processing_20231209144814",
+        "documentation": {}
+    },
+    {
+        "label": "linearWeight",
+        "kind": 2,
+        "importPath": ".history.hdr_processing_20231209144814",
+        "description": ".history.hdr_processing_20231209144814",
+        "peekOfCode": "def linearWeight(pixel_value):\n    z_min, z_max = 0., 255.\n    return pixel_value - z_min if pixel_value <= (z_min + z_max) / 2 else z_max - pixel_value\ndef sampleIntensities(images):\n    z_min, z_max = 0, 255\n    num_intensities = z_max - z_min + 1\n    num_images = len(images)\n    intensity_values = np.zeros((num_intensities, num_images), dtype=np.uint8)\n    mid_img = images[num_images // 2]\n    for i in range(z_min, z_max + 1):",
+        "detail": ".history.hdr_processing_20231209144814",
+        "documentation": {}
+    },
+    {
+        "label": "sampleIntensities",
+        "kind": 2,
+        "importPath": ".history.hdr_processing_20231209144814",
+        "description": ".history.hdr_processing_20231209144814",
+        "peekOfCode": "def sampleIntensities(images):\n    z_min, z_max = 0, 255\n    num_intensities = z_max - z_min + 1\n    num_images = len(images)\n    intensity_values = np.zeros((num_intensities, num_images), dtype=np.uint8)\n    mid_img = images[num_images // 2]\n    for i in range(z_min, z_max + 1):\n        rows, cols = np.where(mid_img == i)\n        if len(rows) != 0:\n            idx = random.randrange(len(rows))",
+        "detail": ".history.hdr_processing_20231209144814",
+        "documentation": {}
+    },
+    {
+        "label": "computeResponseCurve",
+        "kind": 2,
+        "importPath": ".history.hdr_processing_20231209144814",
+        "description": ".history.hdr_processing_20231209144814",
+        "peekOfCode": "def computeResponseCurve(intensity_samples, log_exposures, smoothing_lambda, weighting_function):\n    z_min, z_max = 0, 255\n    intensity_range = 255\n    num_samples = intensity_samples.shape[0]\n    num_images = len(log_exposures)\n    mat_A = np.zeros((num_images * num_samples + intensity_range, num_samples + intensity_range + 1), dtype=np.float64)\n    mat_b = np.zeros((mat_A.shape[0], 1), dtype=np.float64)\n    k = 0\n    for i in range(num_samples):\n        for j in range(num_images):",
+        "detail": ".history.hdr_processing_20231209144814",
+        "documentation": {}
+    },
+    {
+        "label": "computeRadianceMap",
+        "kind": 2,
+        "importPath": ".history.hdr_processing_20231209144814",
+        "description": ".history.hdr_processing_20231209144814",
+        "peekOfCode": "def computeRadianceMap(images, log_exposure_times, response_curve, weighting_function):\n    img_shape = images[0].shape\n    img_rad_map = np.zeros(img_shape, dtype=np.float64)\n    num_images = len(images)\n    for i in range(img_shape[0]):\n        for j in range(img_shape[1]):\n            g = np.array([response_curve[images[k][i, j]] for k in range(num_images)])\n            w = np.array([weighting_function(images[k][i, j]) for k in range(num_images)])\n            SumW = np.sum(w)\n            if SumW > 0:",
+        "detail": ".history.hdr_processing_20231209144814",
+        "documentation": {}
+    },
+    {
+        "label": "globalToneMapping",
+        "kind": 2,
+        "importPath": ".history.hdr_processing_20231209144814",
+        "description": ".history.hdr_processing_20231209144814",
+        "peekOfCode": "def globalToneMapping(image, gamma):\n    image_corrected = cv2.pow(image / 255., 1.0 / gamma)\n    return image_corrected\ndef intensityAdjustment(image, template):\n    m, n, channel = image.shape\n    output = np.zeros((m, n, channel))\n    for ch in range(channel):\n        image_avg, template_avg = np.average(image[:,:, ch]), np.average(template[:,:, ch])\n        output[..., ch] = image[..., ch] * (template_avg / image_avg)\n    return output",
+        "detail": ".history.hdr_processing_20231209144814",
+        "documentation": {}
+    },
+    {
+        "label": "intensityAdjustment",
+        "kind": 2,
+        "importPath": ".history.hdr_processing_20231209144814",
+        "description": ".history.hdr_processing_20231209144814",
+        "peekOfCode": "def intensityAdjustment(image, template):\n    m, n, channel = image.shape\n    output = np.zeros((m, n, channel))\n    for ch in range(channel):\n        image_avg, template_avg = np.average(image[:,:, ch]), np.average(template[:,:, ch])\n        output[..., ch] = image[..., ch] * (template_avg / image_avg)\n    return output\ndef computeHDR(images, log_exposure_times, smoothing_lambda=100., gamma=0.6):\n    num_channels = images[0].shape[2]\n    hdr_image = np.zeros(images[0].shape, dtype=np.float64)",
+        "detail": ".history.hdr_processing_20231209144814",
+        "documentation": {}
+    },
+    {
+        "label": "computeHDR",
+        "kind": 2,
+        "importPath": ".history.hdr_processing_20231209144814",
+        "description": ".history.hdr_processing_20231209144814",
+        "peekOfCode": "def computeHDR(images, log_exposure_times, smoothing_lambda=100., gamma=0.6):\n    num_channels = images[0].shape[2]\n    hdr_image = np.zeros(images[0].shape, dtype=np.float64)\n    for channel in range(num_channels):\n        layer_stack = [img[:,:, channel] for img in images]\n        intensity_samples = sampleIntensities(layer_stack)\n        response_curve = computeResponseCurve(intensity_samples, log_exposure_times, smoothing_lambda, linearWeight)\n        img_rad_map = computeRadianceMap(layer_stack, log_exposure_times, response_curve, linearWeight)\n        hdr_image[..., channel] = cv2.normalize(img_rad_map, alpha=0, beta=255, norm_type=cv2.NORM_MINMAX)\n    image_mapped = globalToneMapping(hdr_image, gamma)",
+        "detail": ".history.hdr_processing_20231209144814",
+        "documentation": {}
+    },
+    {
+        "label": "custom_image_processing_function",
+        "kind": 2,
+        "importPath": ".history.hdr_processing_20231209144814",
+        "description": ".history.hdr_processing_20231209144814",
+        "peekOfCode": "def custom_image_processing_function(image_path):\n    \"\"\"\n    Custom image processing function.\n    Args:\n        image_path (str): Path to the image file.\n    Returns:\n        Processed image object.\n    \"\"\"\n    try:\n        # Placeholder for actual image processing logic",
+        "detail": ".history.hdr_processing_20231209144814",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "kind": 5,
+        "importPath": ".history.hdr_processing_20231209144814",
+        "description": ".history.hdr_processing_20231209144814",
+        "peekOfCode": "logger = logging.getLogger(__name__)\n# Function to extract metadata\ndef extract_metadata(image_path):\n    try:\n        with open(image_path, 'rb') as img_file:\n            tags = exifread.process_file(img_file)\n            return {tag: str(tags[tag]) for tag in tags if tag not in ['JPEGThumbnail', 'TIFFThumbnail', 'Filename', 'EXIF MakerNote']}\n    except Exception as e:\n        logger.error(f\"Error extracting metadata from {image_path}: {e}\", exc_info=True)\n        return {}",
+        "detail": ".history.hdr_processing_20231209144814",
+        "documentation": {}
+    },
+    {
         "label": "SimulatedExposureTimes",
         "kind": 6,
         "importPath": "exposuretimesnode",
@@ -890,6 +1678,15 @@
         "importPath": "hdr_processing",
         "description": "hdr_processing",
         "peekOfCode": "class RetrieveImagesFromFileInvocation(BaseInvocation):\n    input_path: str = InputField(description=\"Path to the file or directory containing images\")\n    save_to_zip: bool = InputField(description=\"Save all retrieved images to a ZIP file.\", default=False)\n    zip_save_path: str = InputField(description=\"Custom path to save the ZIP file.\", default=\"\")\n    def invoke(self, context: InvocationContext) -> ImageCollectionOutput:\n        try:\n            selected_images = self.get_images_from_path(self.input_path)\n            processed_images = []\n            metadata_collection = []\n            for image_path in selected_images:",
+        "detail": "hdr_processing",
+        "documentation": {}
+    },
+    {
+        "label": "CustomImageProcessingInvocation",
+        "kind": 6,
+        "importPath": "hdr_processing",
+        "description": "hdr_processing",
+        "peekOfCode": "class CustomImageProcessingInvocation(BaseInvocation):\n    input_image: ImageField = InputField(description=\"Input image for processing\")\n    def invoke(self, context: InvocationContext) -> ImageCollectionOutput:\n        try:\n            image_path = context.services.images.get_base_path() + self.input_image.image_name\n            processed_image = custom_image_processing_function(image_path)\n            if processed_image:\n                output_image_name = f\"Processed_{self.input_image.image_name}\"\n                processed_image.save(output_image_name)\n                output_image_field = ImageField(image_name=output_image_name)",
         "detail": "hdr_processing",
         "documentation": {}
     },
@@ -962,6 +1759,15 @@
         "importPath": "hdr_processing",
         "description": "hdr_processing",
         "peekOfCode": "def computeHDR(images, log_exposure_times, smoothing_lambda=100., gamma=0.6):\n    num_channels = images[0].shape[2]\n    hdr_image = np.zeros(images[0].shape, dtype=np.float64)\n    for channel in range(num_channels):\n        layer_stack = [img[:,:, channel] for img in images]\n        intensity_samples = sampleIntensities(layer_stack)\n        response_curve = computeResponseCurve(intensity_samples, log_exposure_times, smoothing_lambda, linearWeight)\n        img_rad_map = computeRadianceMap(layer_stack, log_exposure_times, response_curve, linearWeight)\n        hdr_image[..., channel] = cv2.normalize(img_rad_map, alpha=0, beta=255, norm_type=cv2.NORM_MINMAX)\n    image_mapped = globalToneMapping(hdr_image, gamma)",
+        "detail": "hdr_processing",
+        "documentation": {}
+    },
+    {
+        "label": "custom_image_processing_function",
+        "kind": 2,
+        "importPath": "hdr_processing",
+        "description": "hdr_processing",
+        "peekOfCode": "def custom_image_processing_function(image_path):\n    \"\"\"\n    Custom image processing function.\n    Args:\n        image_path (str): Path to the image file.\n    Returns:\n        Processed image object.\n    \"\"\"\n    try:\n        # Placeholder for actual image processing logic",
         "detail": "hdr_processing",
         "documentation": {}
     },

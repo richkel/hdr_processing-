@@ -5,13 +5,13 @@ import logging
 import exifread
 import os
 import zipfile
-from PIL import Image, ImageEnhance, ImageFilter
+from PIL import Image, ImageEnhance
 from concurrent.futures import ThreadPoolExecutor
 from invokeai.app.invocations.baseinvocation import BaseInvocation, InputField, InvocationContext, invocation
 from invokeai.app.invocations.primitives import ImageField, ImageCollectionOutput
 
 # Enhanced logging setup
-logging.basicConfig(level=logging.INFO)
+logging.basicConfig(level=logging.INFO)  # Adjusted to INFO
 logger = logging.getLogger(__name__)
 
 
@@ -186,6 +186,7 @@ class UnifiedHDRProcessingInvocation(BaseInvocation):
             return ImageCollectionOutput(images=[], result_message=f"Unexpected error occurred: {e}")
 
 
+# Next part will continue with the RetrieveImagesFromFileInvocation class.
 # Invocation for retrieving images from file or directory
 @invocation(
     "Retrieve_Images_From_File_Unique",  # Changed name to be unique
